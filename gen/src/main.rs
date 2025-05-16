@@ -47,7 +47,7 @@ fn main() {
         let icons = make_icons(&src_dir);
 
         let mut to = args.to.clone();
-        to.push(&format!("{}.rs", style));
+        to.push(format!("{}.rs", style));
 
         write_icons_file(&icons, &to);
     }
